@@ -1,0 +1,25 @@
+{
+  "name": "agrivault",
+  "version": "1.0.0",
+  "description": "Nigeria's blockchain-powered commodity marketplace",
+  "private": true,
+  "workspaces": [
+    "website",
+    "dashboard"
+  ],
+  "scripts": {
+    "dev:website": "cd website && npm run dev",
+    "dev:dashboard": "cd dashboard && npm run dev",
+    "dev:both": "concurrently \"npm run dev:website\" \"npm run dev:dashboard\"",
+    "build:website": "cd website && npm run build",
+    "build:dashboard": "cd dashboard && npm run build",
+    "build:all": "npm run build:website && npm run build:dashboard",
+    "start:website": "cd website && npm run start",
+    "start:dashboard": "cd dashboard && npm run start",
+    "lint": "cd website && npm run lint && cd ../dashboard && npm run lint",
+    "setup": "npm install && cd website && npm install && cd ../dashboard && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
