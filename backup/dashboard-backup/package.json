@@ -1,0 +1,41 @@
+{
+  "name": "@agrivault/dashboard",
+  "version": "1.0.0",
+  "description": "AgriVault trading dashboard",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hashgraph/sdk": "^2.40.0",
+    "@headlessui/react": "^1.7.17",
+    "@hookform/resolvers": "^3.3.2",
+    "@phosphor-icons/react": "^2.1.10",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.292.0",
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-hook-form": "^7.47.0",
+    "recharts": "^2.8.0",
+    "tailwind-merge": "^2.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "^14.0.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.0.0"
+  }
+}
